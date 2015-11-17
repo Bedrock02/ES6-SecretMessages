@@ -1,0 +1,65 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<title>Secret Messages</title>
+
+</head>
+<html>
+
+	<body>
+		<div class = "container">
+			<div class="hero-unit">
+				<h1>Secret Messages</h1>
+					<p>Send coded messages to your friends</p>
+			</div>
+			<div class = "row">
+				<div class="span6">
+					<label>Message</label>
+					<input id="plainTextInput" type="text" placeholder="Type your message...">
+
+					<br/>
+
+					<label>Key</label>
+					<input id="shiftEncrypt" type="text" placeholder="Number between 0-26">
+
+					<br/>
+
+					<button id = "encryptButton" class='btn'>Encrypt</button>
+				</div>
+
+				<div class="span6">
+					<h3>Encrypted Message</h3>
+					<p id="encryptedText">
+
+					<p>
+				</div>
+			</div>
+
+			<hr />	
+
+			<div class = "row">
+				<div class="span6">
+					<label>Encrypted Text</label>
+					<input id="encryptedInput" type="text" placeholder="Type your encrypted text...">
+
+					<br/>
+
+					<label>Key</label>
+					<input id="shiftDecrypt" type="text" placeholder="Number between 0-26">
+
+					<br/>
+
+					<button id = "decryptButton" class='btn'>Decrypt</button>
+				</div>
+
+				<div class="span6">
+					<h3>Decrypted Message</h3>
+					<p id="decryptedText">
+					<p>
+				</div>
+			</div>
+
+			<script src = "./build/app-bundle.js"></script>
+		</div>
+	</body>
+</html>
